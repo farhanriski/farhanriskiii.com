@@ -7,6 +7,21 @@
     <title>Rianda Port | ACHIVEMENT</title>
     <link rel="icon" type="image/x-icon" href="assets/Asset 13000.png">
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Tambahkan animasi untuk bagian kanan */
+      .container {
+        opacity: 0;
+        transform: translateX(100px);
+        animation: slide-in 1s ease-in-out forwards;
+      }
+
+      @keyframes slide-in {
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
   </head>
   <body class="h-screen bg-white">
     <div class="sm:flex h-full">
@@ -54,7 +69,7 @@
       </div>
 
       <!-- Bagian Kanan -->
-      <div class="sm:w-1/2 overflow-y-auto">
+      <div class="sm:w-1/2 overflow-y-auto container">
         <div class="container bg-blue-700 text-center pt-10 sm:pt-10 pb-20 text-white">
           <h1 class="font-extrabold my-4 text-5xl sm:text-6xl text-white">ACHIVEMENT</h1>
           <p class="italic text-sm text-center">by Farhanriskiii</p>

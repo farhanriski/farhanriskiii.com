@@ -7,6 +7,22 @@
     <title>Rianda Port | MANTRA</title>
     <link rel="icon" type="image/x-icon" href="assets/Asset 13000.png">
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* Tambahkan animasi untuk bagian kanan */
+.container {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: slide-in 1s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+    </style>
   </head>
   <body class="h-screen bg-white">
     <div class="sm:flex h-full">
@@ -54,7 +70,7 @@
       </div>
 
       <!-- Bagian Kanan -->
-      <div class="items-center justify-center sm:w-1/2 bg-blue-700 text-white sm:flex pb-10 sm:pb-0">
+      <div class="items-center justify-center sm:w-1/2 bg-blue-700 text-white sm:flex pb-10 sm:pb-0 container">
         <div class="pt-10 sm:pt-0 px-10 sm:px-28 text-justify">
           <h1 class="text-4xl font-bold">Seni itu bisa melembutkan batu, apalagi hati manusia.</h1>
           <p class="mt-4 font-thin">
