@@ -7,6 +7,27 @@
     <title>Rianda Port | EXPERIENCE</title>
     <link rel="icon" type="image/x-icon" href="assets/Asset 13000.png" />
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      /* ... */
+
+      /* Animasi untuk konten pengalaman */
+      .experience-item {
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeInUp 1s forwards;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
   </head>
   <body class="h-screen bg-white">
     <div class="sm:flex h-full">
@@ -61,7 +82,7 @@
           <!-- Konten -->
           <div class="pt-7 text-justify">
             <!-- 1 -->
-            <div class="mx-7">
+            <div class="mx-7 experience-item">
               <h2 class="font-bold text-3xl">FREELANCER</h2>
               <hr class="" />
               <div class="flex justify-between">
@@ -76,7 +97,7 @@
               </div>
               <hr />
               <!-- 2 -->
-              <div class="pt-7">
+              <div class="pt-7 experience-item">
                 <h2 class="font-bold text-3xl">ARUNIKA</h2>
                 <hr class="" />
                 <div class="flex justify-between">
@@ -90,7 +111,7 @@
                 <hr />
               </div>
               <!-- 3 -->
-              <div class="pt-7">
+              <div class="pt-7 experience-item">
                 <h2 class="font-bold text-3xl">ARTI.std</h2>
                 <hr class="" />
                 <div class="flex justify-between ">
@@ -104,7 +125,7 @@
               <hr />
             </div>
             <!-- 4 -->
-            <div class="pt-7">
+            <div class="pt-7 experience-item">
               <h2 class="font-bold text-3xl">ALTAR SOCIETY</h2>
               <hr class="" />
               <div class="flex justify-between">
@@ -119,7 +140,7 @@
               </div>
               <hr />
             </div>
-            <div class="pt-7">
+            <div class="pt-7 experience-item">
               <h2 class="font-bold text-3xl">KOPI SETIA</h2>
               <hr class="" />
               <div class="flex justify-between">
@@ -134,7 +155,7 @@
               <hr />
             </div>
             <!-- 5 -->
-            <div class="pt-7">
+            <div class="pt-7 experience-item">
               <h2 class="font-bold text-3xl">La OCEANO</h2>
               <hr class="" />
               <div class="flex justify-between">
