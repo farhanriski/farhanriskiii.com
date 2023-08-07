@@ -8,19 +8,55 @@
     <link rel="icon" type="image/x-icon" href="assets/Asset 13000.png" />
     <link rel="stylesheet" href="css/style.css" />
     <style>
-      /* Tambahkan animasi untuk bagian kanan */
-      .container {
+      .portfolio-item {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Tambahkan animasi untuk bagian kanan pada layar kecil */
+    @media screen and (max-width: 640px) {
+      .container-up {
+        opacity: 0;
+        transform: translateY(100px);
+        animation: slide-up 1s ease-in-out forwards;
+      }
+    }
+
+    /* Tambahkan animasi untuk bagian kanan pada layar medium dan besar */
+    @media screen and (min-width: 641px) {
+      .container-up {
         opacity: 0;
         transform: translateX(100px);
         animation: slide-in 1s ease-in-out forwards;
       }
+    }
 
-      @keyframes slide-in {
-        to {
-          opacity: 1;
-          transform: translateX(0);
-        }
+    @keyframes slide-in {
+      to {
+        opacity: 1;
+        transform: translateX(0);
       }
+    }
+
+    @keyframes slide-up {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
     </style>
   </head>
   <body class="h-screen bg-white">
@@ -69,7 +105,7 @@
       </div>
 
       <!-- Bagian Kanan -->
-      <div class="items-center justify-center sm:w-1/2 bg-blue-700 text-white sm:flex container">
+      <div class="items-center justify-center sm:w-1/2 bg-blue-700 text-white sm:flex container-up sm:container">
         <div class="container bg-blue-700 text-center pt-20 sm:pt-20 pb-20 text-white">
           <div class="flex justify-center">
             <div>
