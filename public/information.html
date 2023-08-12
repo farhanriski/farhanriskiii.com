@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="assets/Asset 13000.png">
     <link rel="stylesheet" href="css/style.css" />
     <style>
-.portfolio-item {
+    .portfolio-item {
       opacity: 0;
       transform: translateY(20px);
       animation: fadeInUp 1s forwards;
@@ -56,7 +56,27 @@
         transform: translateY(0);
       }
     }
-  </style>
+    /* Ganti warna garis persentase sesuai preferensi Anda */
+    .progress {
+      width: 100%;
+      height: 10px;
+      background-color: #909090;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background-color: #fff; /* Warna garis persentase */
+      width: 0;
+      transition: width 5s ease-in-out; /* Animasi pertumbuhan garis persentase */
+    }
+
+    .skill-name {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
     </style>
   </head>
   <body class="h-screen bg-white">
@@ -111,6 +131,42 @@
             <div class="container bg-blue-700 text-center pt-10 sm:pt-10 pb-20 text-white">
               <h1 class="font-extrabold my-4 text-5xl sm:text-6xl text-white">INFORMATION</h1>
               <p class="italic text-sm text-center">by Farhanriskiii</p>
+              <div class="mt-6 text-left mx-10 sm:mx-24 pt-10">
+                <h2 class="font-semibold text-2xl text-white mb-2">Skills:</h2>
+                <hr>
+                <ul class="list-disc list-inside mt-3">
+                  <li class="mb-4">
+                    <span class="skill-name">Videography</span>
+                    <div class="progress">
+                      <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span class="skill-name">Photography</span>
+                    <div class="progress">
+                      <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span class="skill-name">Editing</span>
+                    <div class="progress">
+                      <div class="progress-bar" style="width: 95%;"></div>
+                    </div>
+                  </li>
+                  <li class="mb-4">
+                    <span class="skill-name">Design</span>
+                    <div class="progress">
+                      <div class="progress-bar" style="width: 80%;"></div>
+                    </div>
+                  </li>
+                  <!-- Tambahkan keterampilan lain sesuai kebutuhan -->
+                </ul>
+
+                <div class="pt-14">
+                <h2 class="font-semibold text-2xl text-white mb-2">Additional Information:</h2>
+                  <p></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
