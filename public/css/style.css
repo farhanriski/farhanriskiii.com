@@ -670,6 +670,10 @@ video {
   gap: 0.75rem;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
